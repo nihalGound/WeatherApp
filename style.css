@@ -47,7 +47,7 @@ div[user_Btn],div[search_btn]{
     color: white;
     padding: 5px 8px;
     border-radius: 4px;
-    cursor:pointer;
+    cursor: pointer;
 }
 .currentTab{
     background-color: grey;
@@ -249,6 +249,7 @@ div[humidity]::after,div[clouds]::after{
 @media screen and (max-width:393px) {
     .tabs{
         gap:0.8rem;
+        flex-wrap: nowrap;
     }
     .climate-container{
         flex-direction: column;
@@ -256,7 +257,7 @@ div[humidity]::after,div[clouds]::after{
         align-items: center;
     }
     .input{
-        width: 18rem;
+        width: 13rem;
     }
     .user-weather-container{
         margin-top: 2rem;
