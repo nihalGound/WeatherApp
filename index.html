@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div class="container">
+            <h1>Weather App</h1>
+            <div class="tabs">
+                <div user_Btn >Your Weather</div>
+                <div search_btn>Search Weather</div>
+            </div>
+
+            <!-- grant location display  -->
+            <div class="grant-container" grant-container>
+            <img src="Images/location.png" height="100px" width="100px">
+            <h2>Grant Location Access</h2>
+            <p>Allow access to get weather information</p>
+            <button grantAccessBtn>Grant Access</button>
+            </div>
+
+              <!-- search diplay  -->
+            <form searchContaineer class="searchContainer">
+                <input type="text" placeholder="Seach for city..." searchInput class="input">
+                <button type="submit" class="submit-btn"><img src="./Images/search.png" class="search-icon"></button>
+            </form>
+
+            <!-- user current location weather display  -->
+            <div class="user-weather-container" user-weather-container>
+                <div class="header">
+                    <h2 City></h2>
+                    <div class="country-flag"><img country-flag></div>
+                </div>
+                <p desciption></p>
+                <img weather-image>
+                <h2 temperature></h2>
+                <div class="climate-container">
+                    <div class="climate">
+                        <img src="./Images/wind.png">
+                        <h3>Windspeed</h3>
+                        <div windspeed></div>
+                    </div>
+                    <div class="climate">
+                        <img src="./Images/humidity.png">
+                        <h3>Humidity</h3>
+                        <div humidity></div>
+                    </div>
+                    <div class="climate">
+                        <img src="./Images/cloud.png">
+                        <h3>Clouds</h3>
+                        <div clouds></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- not found display -->
+            <div class="notfoundContainer" notFoundContainer>
+                <img src="./Images/not-found.png">
+                <p>city not found</p>
+            </div>
+
+            <!-- loading display  -->
+            <img src="./Images/loading.gif" loadingDisplay class="loadingDisplay">
+
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
