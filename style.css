@@ -47,6 +47,7 @@ div[user_Btn],div[search_btn]{
     color: white;
     padding: 5px 8px;
     border-radius: 4px;
+    cursor:pointer;
 }
 .currentTab{
     background-color: grey;
